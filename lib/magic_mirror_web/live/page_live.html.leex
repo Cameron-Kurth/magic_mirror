@@ -1,0 +1,18 @@
+<style>
+  .top-left-corner {
+    float: left;
+    width: 50%;
+  }
+
+  .top-right-corner {
+    float: right;
+    width: 50%;
+  }
+</style>
+
+<div class="top-left-corner">
+  <%= live_render(@socket, MagicMirrorWeb.ClockLive, id: "clock") %>
+</div>
+<div class="top-right-corner">
+  <%= live_render(@socket, MagicMirrorWeb.WeatherLive, id: "clock") %>
+</div>
